@@ -3,7 +3,7 @@ const number = Math.trunc(Math.random() * 20 + 1);
 
 let score = 20;
 
-document.querySelector('.number').textContent = number;
+
 document.querySelector('.check').addEventListener('click', () => {
   checkcloser(document.querySelector('.guess').value);
 });
@@ -20,12 +20,14 @@ function updatehighscore(num) {
 
 function checkcloser(Number) {
 if(!Number){
+
     document.queryselector('.message').textContent = 'no number';
 
 
 
 }
   else if (Number == number) {
+    document.querySelector('.number').textContent = number;
     document.querySelector('body').style.backgroundColor = '#60b347'; 
     
 
